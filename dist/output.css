@@ -514,15 +514,16 @@ video {
 }
 
 .form-input {
+  margin-bottom: 1rem;
   width: 100%;
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: hsl(246 25% 77% / var(--tw-border-opacity));
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   line-height: 1.25;
 }
 
@@ -601,10 +602,6 @@ video {
   background-repeat: no-repeat;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -623,6 +620,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pb-8 {
@@ -679,9 +681,19 @@ video {
   color: hsl(0 100% 74% / var(--tw-text-opacity));
 }
 
+.text-transparent {
+  color: transparent;
+}
+
 .drop-shadow-md {
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+form > label {
+  margin-bottom: -3.5em;
+  margin-left: 0.5em;
+  z-index: 2;
 }
 
 @media (min-width: 640px) {

@@ -4,6 +4,12 @@
 
 @layer components {
   .form-input {
-    @apply w-full rounded border border-custom-grayish-blue py-2 px-3 leading-tight focus:border-custom-dark-blue focus:outline-none;
+    @apply mb-4 w-full rounded border border-custom-grayish-blue py-4 px-2 leading-tight focus:border-custom-dark-blue focus:outline-none;
   }
+}
+
+form > label {
+  margin-bottom: -3.5em;
+  margin-left: 0.5em;
+  z-index: 2;
 }
