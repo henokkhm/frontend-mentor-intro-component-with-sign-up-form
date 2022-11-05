@@ -513,44 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.static {
-  position: static;
-}
-
 .fixed {
   position: fixed;
 }
@@ -559,21 +521,58 @@ video {
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.box-border {
-  box-sizing: border-box;
+.flex {
+  display: flex;
 }
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-custom-grayish-blue {
+  --tw-border-opacity: 1;
+  border-color: hsl(246 25% 77% / var(--tw-border-opacity));
 }
 
 .bg-custom-red {
@@ -581,16 +580,28 @@ video {
   background-color: hsl(0 100% 74% / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\/images\/bg-intro-mobile\.png\)\] {
-  background-image: url(./images/bg-intro-mobile.png);
+.bg-custom-dark-blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(249 10% 26% / var(--tw-bg-opacity));
+}
+
+.bg-custom-blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(248 32% 49% / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-custom-green {
+  --tw-bg-opacity: 1;
+  background-color: hsl(154 59% 51% / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\.\.\/images\/bg-intro-mobile\.png\)\] {
   background-image: url(../images/bg-intro-mobile.png);
-}
-
-.bg-\[url\(\.\.\/images\/bg-intro-desktop\.png\)\] {
-  background-image: url(../images/bg-intro-desktop.png);
 }
 
 .bg-cover {
@@ -609,9 +620,99 @@ video {
   background-repeat: no-repeat;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-white {
@@ -619,16 +720,41 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.outline {
-  outline-style: solid;
+.text-custom-dark-blue {
+  --tw-text-opacity: 1;
+  color: hsl(249 10% 26% / var(--tw-text-opacity));
+}
+
+.text-custom-grayish-blue {
+  --tw-text-opacity: 1;
+  color: hsl(246 25% 77% / var(--tw-text-opacity));
+}
+
+.text-custom-red {
+  --tw-text-opacity: 1;
+  color: hsl(0 100% 74% / var(--tw-text-opacity));
+}
+
+.drop-shadow-md {
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.focus\:border-custom-dark-blue:focus {
+  --tw-border-opacity: 1;
+  border-color: hsl(249 10% 26% / var(--tw-border-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:outline-custom-dark-blue:focus {
+  outline-color: hsl(249, 10%, 26%);
 }
 
 @media (min-width: 640px) {
-  .sm\:bg-custom-red {
-    --tw-bg-opacity: 1;
-    background-color: hsl(0 100% 74% / var(--tw-bg-opacity));
-  }
-
   .sm\:bg-\[url\(\.\.\/images\/bg-intro-desktop\.png\)\] {
     background-image: url(../images/bg-intro-desktop.png);
   }

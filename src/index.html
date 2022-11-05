@@ -27,10 +27,9 @@
       .attribution {
         font-size: 11px;
         text-align: center;
-        position: absolute;
         bottom: 0;
         width: 100%;
-        padding-bottom: 1em;
+        padding: 0.5em 0;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -39,35 +38,70 @@
   </head>
   <body>
     <main
-      class="min-h-screen bg-custom-red bg-[url(../images/bg-intro-mobile.png)] bg-cover bg-fixed bg-center bg-no-repeat px-8 text-white sm:bg-[url(../images/bg-intro-desktop.png)]"
+      class="flex min-h-screen flex-col gap-8 bg-custom-red bg-[url(../images/bg-intro-mobile.png)] bg-cover bg-fixed bg-center bg-no-repeat py-16 px-8 text-white sm:bg-[url(../images/bg-intro-desktop.png)]"
     >
       <section>
-        <h1 class="">Learn to code by watching others</h1>
-        <p>
+        <h1 class="pb-8 text-center text-4xl font-bold">
+          Learn to code by watching others
+        </h1>
+        <p class="text-center leading-6">
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
       </section>
-      <section>
-        <button>Try it free 7 days then $20/mo. thereafter</button>
-        <form action="#">
+      <section class="flex flex-col gap-8">
+        <button class="rounded-xl bg-custom-blue px-16 py-4 drop-shadow-md">
+          <span class="font-bold">Try it free 7 days</span> then $20/mo.
+          thereafter
+        </button>
+        <form
+          action="#"
+          class="flex flex-col gap-4 rounded-xl bg-white p-4 text-custom-dark-blue"
+        >
           <label for="firstname">First Name</label>
-          <input name="firstname" id="firstname" type="text" />
+          <input
+            name="firstname"
+            id="firstname"
+            type="text"
+            class="w-full rounded border border-custom-grayish-blue py-2 px-3 leading-tight focus:border-custom-dark-blue focus:outline-none"
+          />
 
           <label for="lastname">Last Name</label>
-          <input name="lastname" id="lastname" type="text" />
+          <input
+            name="lastname"
+            id="lastname"
+            type="text"
+            class="w-full rounded border border-custom-grayish-blue py-2 px-3 leading-tight focus:border-custom-dark-blue focus:outline-none"
+          />
 
           <label for="email">Email Address</label>
-          <input name="email" id="email" type="email" />
+          <input
+            name="email"
+            id="email"
+            type="email"
+            class="w-full rounded border border-custom-grayish-blue py-2 px-3 leading-tight focus:border-custom-dark-blue focus:outline-none"
+          />
 
           <label for="password">Password</label>
-          <input name="password" id="password" type="password" />
+          <input
+            name="password"
+            id="password"
+            type="password"
+            class="w-full rounded border border-custom-grayish-blue py-2 px-3 leading-tight focus:border-custom-dark-blue focus:outline-none"
+          />
 
-          <button type="submit">Claim your free trial</button>
-          <p>
+          <button
+            type="submit"
+            class="rounded-lg bg-custom-green py-4 font-bold uppercase tracking-wider text-white"
+          >
+            Claim your free trial
+          </button>
+          <p
+            class="px-8 text-center text-xs leading-6 text-custom-grayish-blue"
+          >
             By clicking the button, you are agreeing to our
-            <span>Terms and Services</span>
+            <span class="font-bold text-custom-red">Terms and Services</span>
           </p>
         </form>
       </section>
