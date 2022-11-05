@@ -4,7 +4,8 @@
   "description": "\"Frontend Mento Challenge: Intro component with sign-up form (https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/henokkh/frontend-mentor-intro-component-with-sign-up-form/issues"
   },
-  "homepage": "https://github.com/henokkh/frontend-mentor-intro-component-with-sign-up-form#readme"
+  "homepage": "https://github.com/henokkh/frontend-mentor-intro-component-with-sign-up-form#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
+  }
 }
