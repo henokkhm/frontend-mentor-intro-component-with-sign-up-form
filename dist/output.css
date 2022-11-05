@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -513,24 +513,123 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.box-border {
+  box-sizing: border-box;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .bg-custom-red {
   --tw-bg-opacity: 1;
   background-color: hsl(0 100% 74% / var(--tw-bg-opacity));
 }
 
-.font-poppins {
-  font-family: Poppins;
+.bg-\[url\(\.\/images\/bg-intro-mobile\.png\)\] {
+  background-image: url(./images/bg-intro-mobile.png);
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.bg-\[url\(\.\.\/images\/bg-intro-mobile\.png\)\] {
+  background-image: url(../images/bg-intro-mobile.png);
 }
 
-.font-bold {
-  font-weight: 700;
+.bg-\[url\(\.\.\/images\/bg-intro-desktop\.png\)\] {
+  background-image: url(../images/bg-intro-desktop.png);
 }
 
-.underline {
-  text-decoration-line: underline;
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.outline {
+  outline-style: solid;
+}
+
+@media (min-width: 640px) {
+  .sm\:bg-custom-red {
+    --tw-bg-opacity: 1;
+    background-color: hsl(0 100% 74% / var(--tw-bg-opacity));
+  }
+
+  .sm\:bg-\[url\(\.\.\/images\/bg-intro-desktop\.png\)\] {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
 }
