@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -513,8 +513,13 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.p-16 {
-  padding: 4rem;
+.bg-custom-red {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 100% 74% / var(--tw-bg-opacity));
+}
+
+.font-poppins {
+  font-family: Poppins;
 }
 
 .text-3xl {
@@ -524,11 +529,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.text-rose-500 {
-  --tw-text-opacity: 1;
-  color: rgb(244 63 94 / var(--tw-text-opacity));
 }
 
 .underline {
