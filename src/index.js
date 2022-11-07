@@ -5,9 +5,9 @@ document.querySelectorAll("input").forEach((input) => {
       () => {
         const label = getLabel(input);
         if (input.value.length > 0 || document.activeElement === input) {
-          label.classList.add("text-transparent");
+          label.classList.add("hidden");
         } else {
-          label.classList.remove("text-transparent");
+          label.classList.remove("hidden");
         }
       };
 });
